@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-
+import django_heroku
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
@@ -91,7 +92,7 @@ DATABASES = {
 }
 
 # Update database configuration with DATABASE_URL if present
-import dj_database_url
+
 DATABASE_URL = os.getenv('DATABASE_URL')
 if DATABASE_URL:
     DATABASES['default'] = dj_database_url.config(default=DATABASE_URL)
@@ -131,9 +132,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'),]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+django_heroku.settings(locals())
 
 LOGIN_REDIRECT_URL = 'test'
 LOGOUT_REDIRECT_URL = 'thanks'

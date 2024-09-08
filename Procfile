@@ -1,1 +1,1 @@
-web: gunicorn simplesocial.wsgi --log-file -
+web gunicorn simplesocial.wsgi:apllication --log-file -
