@@ -1,0 +1,18 @@
+argon2-cffi==23.1.0
+argon2-cffi-bindings==21.2.0
+asgiref @ file:///C:/b/abs_ae1n0p_8_w/croot/asgiref_1724072476516/work
+bcrypt==4.2.0
+cffi==1.17.0
+Django @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/django_1699555153998/work
+django-bootstrap3==24.2
+django-braces==1.15.0
+Faker==28.0.0
+misaka==2.1.1
+pillow==10.4.0
+pycparser==2.22
+python-dateutil==2.9.0.post0
+setuptools==72.1.0
+six==1.16.0
+sqlparse @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/sqlparse_1699544474746/work
+tzdata @ file:///croot/python-tzdata_1690578112552/work
+wheel==0.43.0
