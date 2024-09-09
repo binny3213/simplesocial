@@ -1,4 +1,4 @@
-SocialConnect
+<h1>SocialConnect</h1>
 Welcome to SocialConnect! This platform is designed to help you connect with friends, form groups, and socialize effortlessly. Whether you’re looking to chat, share experiences, or organize events, SocialConnect has got you covered.
 
 <h3>Features</h3>
